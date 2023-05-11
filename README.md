@@ -24,6 +24,9 @@ trained on a large dataset of chest X-ray images and corresponding reports, and 
 learning framework. We evaluate the performance of our model using standard metrics, and demonstrate its
 effectiveness in generating accurate and coherent reports.
 
+![image](https://github.com/piyalisaha2002/Chest_X-ray_report_generator_using_deep_learning/assets/120237181/40296d34-1f71-4bd4-9b14-6030c2962c61)
+
+
 ### Kaggle notebook link: https://www.kaggle.com/code/shashankpandey2411/deep-learning-project
 #### Dataset link: https://www.kaggle.com/datasets/raddar/chest-xrays-indiana-university
 
