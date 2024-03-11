@@ -2,6 +2,7 @@
 
 In this project, we introduce a deep learning model for automatically generating captions for Chest X-ray reports. Radiology reports play a crucial role in medical diagnosis and treatment planning, especially for lung diseases commonly diagnosed through Chest X-ray images. However, creating comprehensive and accurate reports can be time-consuming and relies heavily on expert knowledge. To streamline this process, we developed a deep learning-based system that automatically generates descriptive captions for Chest X-ray images.
 
+
 ## Overview
 
 Our system utilizes DenseNet, a convolutional neural network (CNN) architecture, to analyze Chest X-ray images and extract relevant features. These features are then fed into a GRU (Gated Recurrent Unit) based network for caption generation. The generated captions aim to capture important details such as abnormalities, disease progression, and treatment options, providing a more efficient and cost-effective solution for healthcare professionals.
