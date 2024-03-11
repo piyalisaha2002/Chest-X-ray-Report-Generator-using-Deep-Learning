@@ -1,36 +1,52 @@
-# Chest_X-ray_report_generator_using_deep_learning
+# Chest X-ray Report Generator using Deep Learning
 
-In this project, we present a deep learning model for generating captions for the Chest X-ray reports. Radiology
-reports are a critical aspect of medical diagnosis and treatment planning. Chest X-ray images are commonly used
-to diagnose various lung diseases, and their interpretation requires highly trained medical professionals.
-Generating accurate and comprehensive chest X-ray reports can be a time-consuming and expert-driven task. To
-address this issue, we developed a deep learning-based system for chest X-ray report generation. 
+In this project, we introduce a deep learning model for automatically generating captions for Chest X-ray reports. Radiology reports play a crucial role in medical diagnosis and treatment planning, especially for lung diseases commonly diagnosed through Chest X-ray images. However, creating comprehensive and accurate reports can be time-consuming and relies heavily on expert knowledge. To streamline this process, we developed a deep learning-based system that automatically generates descriptive captions for Chest X-ray images.
 
-The system uses DenseNet a convolutional neural network (CNN) based network to analyse chest X-ray images and generate
-corresponding reports with captioning by help of GRU. Our model generates reports using the input chest X-ray
-images, and aims to provide a more efficient and cost-effective solution for healthcare professionals. The image
-caption generator extracts relevant features from the X-ray images and generate descriptive captions that
-capture important details such as abnormalities, disease progression, and treatment options. 
+## Overview
 
-The model is trained on a large dataset of chest X-ray images and corresponding reports, and is implemented using a deep
-learning framework. We evaluate the performance of our model using standard metrics, and demonstrate its
-effectiveness in generating accurate and coherent reports.
+Our system utilizes DenseNet, a convolutional neural network (CNN) architecture, to analyze Chest X-ray images and extract relevant features. These features are then fed into a GRU (Gated Recurrent Unit) based network for caption generation. The generated captions aim to capture important details such as abnormalities, disease progression, and treatment options, providing a more efficient and cost-effective solution for healthcare professionals.
 
-Our model generates reports using the input chest X-ray
-images, and aims to provide a more efficient and cost-effective solution for healthcare professionals. The image
-caption generator extracts relevant features from the X-ray images and generate descriptive captions that
-capture important details such as abnormalities, disease progression, and treatment options. The model is
-trained on a large dataset of chest X-ray images and corresponding reports, and is implemented using a deep
-learning framework. We evaluate the performance of our model using standard metrics, and demonstrate its
-effectiveness in generating accurate and coherent reports.
+## Methodology
 
-![image](https://github.com/piyalisaha2002/Chest_X-ray_report_generator_using_deep_learning/assets/120237181/40296d34-1f71-4bd4-9b14-6030c2962c61)
+1. **Data Preprocessing**:
+   - Preprocess the Chest X-ray images and corresponding reports.
+   - Tokenize the text data for training the caption generator.
 
+2. **Model Architecture**:
+   - Utilize DenseNet as the image encoder to extract features from the images.
+   - Implement a GRU-based decoder to generate captions based on the extracted features.
 
-### Kaggle notebook link: https://www.kaggle.com/code/shashankpandey2411/deep-learning-project
-#### Dataset link: https://www.kaggle.com/datasets/raddar/chest-xrays-indiana-university
+3. **Training**:
+   - Train the model on a large dataset of Chest X-ray images and corresponding reports.
+   - Fine-tune the model using a deep learning framework, optimizing for accuracy and coherence in generated captions.
 
+4. **Evaluation**:
+   - Evaluate the performance of the model using standard metrics such as BLEU score, ROUGE score, and human evaluation.
+   - Validate the accuracy and coherence of the generated reports compared to ground truth reports.
 
+## Dataset
+
+- The model is trained on a large dataset of Chest X-ray images and corresponding reports.
+- Dataset link: [Chest X-rays Indiana University](https://www.kaggle.com/datasets/raddar/chest-xrays-indiana-university)
+
+## Usage
+
+1. **Data Preparation**:
+   - Ensure that the Chest X-ray images and corresponding reports are preprocessed and formatted correctly.
+
+2. **Model Training**:
+   - Train the model using the provided script or notebook.
+   - Fine-tune the hyperparameters as necessary to optimize performance.
+
+3. **Model Evaluation**:
+   - Evaluate the generated captions using standard metrics and human evaluation.
+   - Adjust the model architecture or training process based on evaluation results.
 
 ## Future Works
-1) We will try to increase our model accuracy by using Attention model instead of Encoder-decoder.
+
+1. Explore the use of Attention models to further improve the accuracy and coherence of generated captions.
+
+## Resources
+
+- Kaggle notebook link: [Deep Learning Project](https://www.kaggle.com/code/shashankpandey2411/deep-learning-project)
+
